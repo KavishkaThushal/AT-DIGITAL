@@ -20,11 +20,19 @@ export default {
         AccentYarn:'#FFF8E0',
         Error:'#FF0335',
         Success:'#5EB30B'
-        
-
-      }
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
+    fontFamily:{
+      sans: ['Inter', 'sans-serif'],
+    }
   },
   plugins: [],
 }
+        
+
 
