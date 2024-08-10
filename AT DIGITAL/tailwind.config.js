@@ -26,6 +26,12 @@ export default {
         lato: ['Lato', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      fontWeight: {
+        thin: '400', 
+        light: '500', 
+        normal: '600', 
+        bold: '700', 
+      },
     },
     fontFamily:{
       sans: ['Inter', 'sans-serif'],
