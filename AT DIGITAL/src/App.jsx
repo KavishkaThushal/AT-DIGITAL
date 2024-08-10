@@ -6,7 +6,7 @@ import Aboutus from "./pages/about us/Aboutus"
 import Contactus from "./pages/contactus/Contactus"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
-import Button from "./components/button/Button"
+
 
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar/>
-    <Button height={38} width={214} Text={'Get free consultation'}/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/careers" element={<Careers />} />
@@ -27,6 +26,7 @@ function App() {
   )
 
 }
+    
   
 export default App
 
