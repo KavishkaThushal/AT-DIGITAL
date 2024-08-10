@@ -21,8 +21,8 @@ function Home() {
       </div>
 
       {/* service section 1 */}
-      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row'>
-        <div className='w-[275px] h-[275px] '>
+      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row md:mx-[40px] lg:mx-[152px] lg:my-[80px]'>
+        <div className='w-[275px] h-[275px] lg:w-[346px] lg:h-[346px] '>
           <img src={image2} alt='service 1' className='w-full h-full object-cover'/>
 
         </div>
