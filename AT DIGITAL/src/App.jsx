@@ -6,6 +6,7 @@ import Aboutus from "./pages/about us/Aboutus"
 import Contactus from "./pages/contactus/Contactus"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
+import NotFound from "./pages/notfound/NotFound"
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contactus />} />
       <Route path="/aboutus" element={<Aboutus />} />
+      <Route path="*" element={<NotFound />} />
+
     </Routes>
     <Footer/>
     </BrowserRouter>

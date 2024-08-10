@@ -5,19 +5,20 @@ import hero from '../../assets/hero.png'
 import Button from '../../components/button/Button'
 import image2 from '../../assets/image2.png'
 import image1 from '../../assets/image1.png'
+
 function Home() {
   const [showId, setShowId] = useState(null)
   return (
-    <div className='flex flex-col gap-[60px] lg:my-[80px]'>
+    <div className='flex flex-col gap-[60px] lg:gap-[80px]'>
 
-      {/* //hero section */}
+      {/* hero section */}
       <div className='flex flex-col w-full relative'>
         <div className='w-full h-[218px] md:h-[448px] lg:h-[700px]'>
           <img src={hero} alt='hero' className='w-full h-full object-cover'/>
         </div>
         <div className='flex flex-col px-[20px] pb-[32px] pt-[24px] bg-gradient-to-r from-[#4DCA79] to-AnalogousBlue gap-[20px] md:px-[40px] lg:absolute lg:w-[622px] lg:left-[60px] lg:bottom-[40px] xl:left-[80px] '>
-            <h1 className='text-[36px]  font-bold text-white leading-[36px] md:text-[48px] md:leading-[48px] '>We crush your competitors, goals, and sales records - without the B.S.</h1>
-            <Button text='Get free consultation' height={38} width={214} onClick={()=>{}}/>
+            <h1 className='text-[36px]  font-bold text-white leading-[36px] md:text-[48px] md:leading-[48px] ' style={{ letterSpacing: '-0.02em' }}>We crush your competitors, goals, and sales records - without the B.S.</h1>
+            <Button text='GET FREE CONSULTATION' height={38} width={230} onClick={()=>{}}/>
         </div>
       </div>
 
@@ -54,10 +55,10 @@ function Home() {
 
     {/* faq section */}
     <div className='flex flex-col gap-[28px] justify-center  mx-[20px]  md:mx-[40px] lg:mx-[152px] xl:mx-[297px]'>
-      <h1 className='text-[27px] font-normal text-Primary text-center font-poppins'>Frequently asked questions</h1>
+      <h1 className='text-[27px] font-normal text-Primary text-center font-poppins' style={{ letterSpacing: '0.4px' }}>Frequently asked questions</h1>
       <div className=' flex flex-col gap-[15px]'>
 
-        {data?.map((item)=>(
+        {data?.length ? (data?.map((item)=>(
           <FAQS
           key={item.id}
           id={item.id}
@@ -66,7 +67,7 @@ function Home() {
           setShowId={setShowId}
           showId={showId}
           />
-        ))}
+        ))):(<p className='text-Error text-sm'>No FAQs available.</p>)}
 
       </div>
     </div>
