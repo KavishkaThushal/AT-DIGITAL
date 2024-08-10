@@ -4,12 +4,13 @@ import { FiPlus, FiMinus  } from "react-icons/fi";
 
 
 function FAQS({id,title,content,setShowId,showId}) {
+  const handler=()=>setShowId(prev=>prev===id? null:id )
   
   return (
     <div className='flex flex-col p-[24px] bg-[#FAF8FF] rounded-[7px] gap-[13px]  transition-all duration-700 ease-in-out'>
       <div className='flex flex-row justify-between  gap-[13px]'>
       <span className={`text-[20px] font-light ${showId===id ? 'text-Primary':'text-black'} leading-[28px] md:text-[22px] transition-all duration-700 ease-in-out `}>{title}</span>
-      <span className='flex text-[20px] font-light cursor-pointer transition-all duration-500 ease-in-out md:text-[22px]' onClick={()=>(setShowId(prev=>prev===id? null:id ))} >{showId===id? <FiMinus />:<FiPlus />}</span>
+      <span className='flex text-[20px] font-light cursor-pointer transition-all duration-500 ease-in-out md:text-[22px]' onClick={handler} >{showId===id? <FiMinus />:<FiPlus />}</span>
       
 
       </div>

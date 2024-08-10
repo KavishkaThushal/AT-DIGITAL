@@ -5,6 +5,7 @@ import hero from '../../assets/hero.png'
 import Button from '../../components/button/Button'
 import image2 from '../../assets/image2.png'
 import image1 from '../../assets/image1.png'
+
 function Home() {
   const [showId, setShowId] = useState(null)
   return (
