@@ -11,17 +11,17 @@ function Navbar() {
     
       
     <div className='flex flex-row bg-Primary h-[77px] px-[20px] py-[26px] xl:px-[80px]  lg:px-[60px]  md:px-[40px]  items-center justify-between w-full'>
-      <div className='h-[25px]  '>
+      <Link to='/' className='h-[25px]  '>
         <img src={logo} alt='logo' className='w-full h-full ' />
-      </div>
+      </Link>
       
 
       <div className={`${showMenu? 'translate-x-0 ' : 'translate-x-full  '} flex flex-col   fixed gap-[32px] px-[20px] py-[16px]  top-0 right-0  bg-white w-full h-screen  z-10  text-stone-900  text-[14px] font-light  transition-transform transform duration-300 ease-in-out  sm:flex sm:relative  sm:bg-inherit  sm:w-auto sm:h-auto sm:px-0 sm:py-0 sm:flex-row sm:gap-[28px]  sm:text-white sm:translate-x-0`}>
-        <Link to='/' className='flex sm:hidden'>HOME</Link>
-        <Link to='/services'>SERVICES</Link>
-        <Link to='/aboutus'>ABOUT US</Link>
-        <Link to='/contact'>CONTACT US</Link>
-        <Link to='/careers'>CAREERS</Link>  
+        <Link to='/' className='flex sm:hidden' onClick={()=>(setShowMenu(false))}>HOME</Link>
+        <Link to='/services' onClick={()=>(setShowMenu(false))}>SERVICES</Link>
+        <Link to='/aboutus'  onClick={()=>(setShowMenu(false))}>ABOUT US</Link>
+        <Link to='/contact'  onClick={()=>(setShowMenu(false))}>CONTACT US</Link>
+        <Link to='/careers'  onClick={()=>(setShowMenu(false))}>CAREERS</Link>  
         <IoClose size={32} className='absolute sm:hidden top-2 right-2' onClick={()=>(setShowMenu(false))} />            
       </div>
 
