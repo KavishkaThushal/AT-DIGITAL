@@ -38,7 +38,7 @@ function Home() {
 
       {/* service section 2 */}
       <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row-reverse md:mx-[40px] lg:mx-[152px] lg:my-[80px] xl:mx-[188px] xl:gap-[108px] '>
-      <div className='w-[275px] h-[276px] lg:w-[346px] lg:h-[346px] xl:w-[414px] xl:h-[414px]'>
+      <div className='w-[275px] h-[276px] lg:w-[346px] lg:h-[348px] xl:w-[414px] xl:h-[414px]'>
           <img src={image1} alt='service 1' className='w-full h-full object-cover'/>
 
         </div>
