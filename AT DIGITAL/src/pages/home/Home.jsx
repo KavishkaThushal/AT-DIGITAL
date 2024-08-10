@@ -10,11 +10,11 @@ function Home() {
     <div className='flex flex-col'>
       {/* //hero section */}
       <div className='flex flex-col w-full '>
-        <div className='w-full h-[218px]'>
+        <div className='w-full h-[218px] md:h-[448px]'>
           <img src={hero} alt='hero' className='w-full h-full object-cover'/>
         </div>
-        <div className='flex flex-col px-[20px] pb-[32px] pt-[24px] bg-gradient-to-r from-[#4DCA79] to-AnalogousBlue gap-[20px]  '>
-            <h1 className='text-[36px]  font-bold text-white leading-[36px] '>We crush your competitors, goals, and sales records - without the B.S.</h1>
+        <div className='flex flex-col px-[20px] pb-[32px] pt-[24px] bg-gradient-to-r from-[#4DCA79] to-AnalogousBlue gap-[20px] md:px-[40px]  '>
+            <h1 className='text-[36px]  font-bold text-white leading-[36px] md:text-[48px] md:leading-[48px]'>We crush your competitors, goals, and sales records - without the B.S.</h1>
             <Button text='Get free consultation' height={38} width={214} onClick={()=>{}}/>
         </div>
 
