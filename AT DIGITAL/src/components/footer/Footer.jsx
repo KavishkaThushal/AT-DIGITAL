@@ -2,8 +2,8 @@ import React from 'react'
 import logo from '../../assets/logo.png'
 function Footer() {
   return (
-    <div className='flex flex-col w-full  bg-Primary pt-[40px] pb-[20px] px-[20px] gap-[40px] md:px-[40px] '>
-      <div className='flex flex-col gap-[60px]'>
+    <div className='flex flex-col w-full  bg-Primary pt-[40px] pb-[20px] px-[20px] gap-[40px] md:px-[40px] lg:px-[60px]  '>
+      <div className='flex flex-col gap-[60px] lg:flex-row justify-between '>
       <div className='flex flex-col gap-[20px] '>
         <div className=' w-[238.89px]'>
           <img src={logo} alt='logo' className='w-full h-full' />
@@ -12,7 +12,7 @@ function Footer() {
 
       </div>
 
-      <div className='flex flex-col gap-[40px] md:gap-[80px] md:flex-row'>
+      <div className='flex flex-col gap-[40px] md:gap-[80px] md:flex-row lg:gap-[96px]'>
         <div className='flex flex-col gap-3'>
           <h3 className='text-white font-lato text-[21px] font-normal'>Our Technologies</h3>
           <p className='text-white font-lato text-[14px] font-light '>ReactJS</p>
