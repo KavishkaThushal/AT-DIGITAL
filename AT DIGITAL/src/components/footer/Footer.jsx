@@ -12,7 +12,7 @@ function Footer() {
 
       </div>
 
-      <div className='flex flex-col gap-[40px] md:gap-[80px] md:flex-row lg:gap-[96px]'>
+      <div className='flex flex-col gap-[40px] md:gap-[80px] md:flex-row lg:gap-[96px] xl:gap-[146px]'>
         <div className='flex flex-col gap-3'>
           <h3 className='text-white font-lato text-[21px] font-normal'>Our Technologies</h3>
           <p className='text-white font-lato text-[14px] font-light '>ReactJS</p>
