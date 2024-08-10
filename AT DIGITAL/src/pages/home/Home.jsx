@@ -21,17 +21,17 @@ function Home() {
       </div>
 
       {/* service section 1 */}
-      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px]'>
-        <div className='w-[275px]'>
+      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row'>
+        <div className='w-[275px] h-[275px] '>
           <img src={image2} alt='service 1' className='w-full h-full object-cover'/>
 
         </div>
-        <div className='flex flex-col gap-[20px] '>
-          <h1 className='text-[27px] font-normal text-Primary text-center font-poppins leading-[33px]  ' style={{ letterSpacing: '0.4px' }}>Web & Mobile App Development</h1>
-          <p className='text-[16px] leading-[19px] text-center font-thin text-black'>Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
+        <div className='flex flex-col gap-[20px] items-center md:flex-1 md:items-start '>
+          <h1 className='text-[27px] font-normal text-Primary text-center font-poppins leading-[33px]  md:text-start' style={{ letterSpacing: '0.4px' }}>Web & Mobile App Development</h1>
+          <p className='text-[16px] leading-[19.36px] text-center font-thin text-black md:text-start'>Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.</p>
 
-        </div>
         <Button text='LEARN MORE' height={38} width={150} onClick={()=>{}}/>
+        </div>
 
       </div>
 
