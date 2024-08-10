@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Button() {
+function Button({height,width,text,onClick}) {
   return (
-    <div>Button</div>
+    <button className={`flex items-center justify-center bg-Secondary  text-white text-[14px] font-bold px-[20px] py-[12px] rounded`} style={{ height: `${height}px`, width: `${width}px` }} onClick={onClick}>{text}</button>
   )
 }
 
 export default Button
+    
+    
