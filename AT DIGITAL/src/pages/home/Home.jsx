@@ -8,7 +8,7 @@ import image1 from '../../assets/image1.png'
 function Home() {
   const [showId, setShowId] = useState(null)
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col gap-[60px] lg:my-[80px]'>
 
       {/* //hero section */}
       <div className='flex flex-col w-full relative'>
@@ -22,7 +22,7 @@ function Home() {
       </div>
 
       {/* service section 1 */}
-      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row md:mx-[40px] lg:mx-[152px] lg:my-[80px] xl:mx-[188px] xl:gap-[108px]'>
+      <div className='flex flex-col  mx-[20px] items-center gap-[20px] md:flex-row md:mx-[40px] lg:mx-[152px]  xl:mx-[188px] xl:gap-[108px]'>
         <div className='w-[275px] h-[275px] lg:w-[346px] lg:h-[346px] xl:w-[414px] xl:h-[414px]'>
           <img src={image2} alt='service 1' className='w-full h-full object-cover'/>
 
@@ -37,7 +37,7 @@ function Home() {
       </div>
 
       {/* service section 2 */}
-      <div className='flex flex-col my-[60px] mx-[20px] items-center gap-[20px] md:flex-row-reverse md:mx-[40px] lg:mx-[152px] lg:my-[80px] xl:mx-[188px] xl:gap-[108px] '>
+      <div className='flex flex-col  mx-[20px] items-center gap-[20px] md:flex-row-reverse md:mx-[40px] lg:mx-[152px]  xl:mx-[188px] xl:gap-[108px] '>
       <div className='w-[275px] h-[276px] lg:w-[346px] lg:h-[348px] xl:w-[414px] xl:h-[416px]'>
           <img src={image1} alt='service 1' className='w-full h-full object-cover'/>
 
@@ -53,7 +53,7 @@ function Home() {
       </div>
 
     {/* faq section */}
-    <div className='flex flex-col gap-[28px] justify-center  mx-[20px] my-[60px] md:mx-[40px] lg:mx-[152px] xl:mx-[297px] lg:my-[80px]'>
+    <div className='flex flex-col gap-[28px] justify-center  mx-[20px]  md:mx-[40px] lg:mx-[152px] xl:mx-[297px]'>
       <h1 className='text-[27px] font-normal text-Primary text-center font-poppins'>Frequently asked questions</h1>
       <div className=' flex flex-col gap-[15px]'>
 
